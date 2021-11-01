@@ -57,7 +57,9 @@ public class MainController implements Initializable {
     }
 
     private List<String> getFiles(Path path) throws IOException {
-        return Files.list(path).map(p -> p.getFileName().toString())
+        // web 4 Stream Api
+        return Files.list(path)
+                .map(p -> p.getFileName().toString())
                 .collect(Collectors.toList());
     }
 
