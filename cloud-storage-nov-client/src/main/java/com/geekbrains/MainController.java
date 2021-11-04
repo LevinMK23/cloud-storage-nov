@@ -2,12 +2,16 @@ package com.geekbrains;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 import java.net.Socket;
 import java.net.URL;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
@@ -22,6 +26,9 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class MainController implements Initializable {
 
+    private static final int BUFFER_SIZE = 1024;
+
+    private byte [] buf;
     private Path clientDir;
     public ListView<String> clientView;
     public ListView<String> serverView;
@@ -32,6 +39,7 @@ public class MainController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         try {
+            buf = new byte[BUFFER_SIZE];
             clientDir = Paths.get("cloud-storage-nov-client", "client");
             if (!Files.exists(clientDir)) {
                 Files.createDirectory(clientDir);
@@ -66,9 +74,41 @@ public class MainController implements Initializable {
     private void read() {
         try {
             while (true) {
-                String msg = is.readUTF();
-                log.debug("Received: {}", msg);
-                Platform.runLater(() -> clientView.getItems().add(msg));
+                String command = is.readUTF();
+                log.debug("Received: {}", command);
+                if (command.equals("list")) {
+                    int count = is.readInt();
+                    log.debug("Process list files, count = {}", count);
+                    List<String> list = new ArrayList<>();
+                    for (int i = 0; i < count; i++) {
+                        String fileName = is.readUTF();
+                        list.add(fileName);
+                    }
+                    Platform.runLater(() -> {
+                        serverView.getItems().clear();
+                        serverView.getItems().addAll(list);
+                    });
+                    log.debug("files on server: {}", list);
+                }
+                if (command.equals("file")) {
+                    String fileName = is.readUTF();
+                    log.debug("download file: {}", fileName);
+                    long size = is.readLong();
+                    log.debug("Read {} bytes", size);
+                    long butchCount = (size + BUFFER_SIZE - 1) / BUFFER_SIZE;
+                    Path file = clientDir.resolve(fileName);
+                    try (OutputStream fos = new FileOutputStream(file.toFile())) {
+                        for (int i = 0; i < butchCount; i++) {
+                            int read = is.read(buf);
+                            fos.write(buf, 0, read);
+                        }
+                    }
+                    List<String> files = getFiles(clientDir);
+                    Platform.runLater(() -> {
+                        clientView.getItems().clear();
+                        clientView.getItems().addAll(files);
+                    });
+                }
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -81,5 +121,28 @@ public class MainController implements Initializable {
         os.flush();
         input.clear();
         // TODO: 28.10.2021 Передать файл на сервер
+    }
+
+    public void upload(ActionEvent actionEvent) throws IOException {
+        String fileName = clientView.getSelectionModel().getSelectedItem();
+        os.writeUTF("file");
+        os.writeUTF(fileName);
+        long size = Files.size(clientDir.resolve(fileName));
+        os.writeLong(size);
+        Path file = clientDir.resolve(fileName);
+        try (FileInputStream fis = new FileInputStream(file.toFile())) {
+            while (fis.available() > 0) {
+                int read = fis.read(buf);
+                os.write(buf, 0, read);
+            }
+        }
+        os.flush();
+    }
+
+    public void download(ActionEvent actionEvent) throws IOException {
+        String fileName = serverView.getSelectionModel().getSelectedItem();
+        os.writeUTF("fileRequest");
+        os.writeUTF(fileName);
+        os.flush();
     }
 }
