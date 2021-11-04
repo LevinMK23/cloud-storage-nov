@@ -1,8 +1,6 @@
 package com.geekbrains;
 
-import java.io.DataInputStream;
-import java.io.DataOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.Socket;
 import java.net.URL;
 import java.nio.file.Files;
@@ -81,5 +79,25 @@ public class MainController implements Initializable {
         os.flush();
         input.clear();
         // TODO: 28.10.2021 Передать файл на сервер
+        sendFile(text);
+    }
+
+    private void sendFile(String fileName) throws IOException {
+        File fileToTransfer = new File(clientDir.toFile(),fileName);
+        long fileSize = fileToTransfer.length();
+        FileInputStream fis = new FileInputStream(fileToTransfer);
+        os.writeUTF("FILE");
+        os.flush();
+        os.writeUTF(fileName);
+        os.flush();
+        os.writeLong(fileSize);
+        os.flush();
+        byte[] buffer = new byte[256];
+        int bytesRead = 0;
+        while ((bytesRead = fis.read(buffer)) != -1){
+            os.write(buffer,0,bytesRead);
+        }
+        os.flush();
+        fis.close();
     }
 }
