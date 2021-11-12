@@ -1,9 +1,9 @@
 package com.geekbrains;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.net.ServerSocket;
 import java.net.Socket;
-
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class Server {

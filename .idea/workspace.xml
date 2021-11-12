@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/server/root/Hello.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/BuffersExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioExamples.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/DaemonThreadsExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/DaemonThreadsExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Server.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/BuffersExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/BuffersExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioExamples.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioExamples.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +47,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-storage-nov-client/client" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="project.structure.side.proportion" value="0.2861357" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -63,7 +67,20 @@
       <recent name="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NioServer">
+  <component name="RunManager" selected="Application.App">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geekbrains.App" />
       <module name="cloud-storage-nov-client" />
@@ -129,26 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NioServer" />
-        <item itemvalue="Application.BuffersExamples" />
-        <item itemvalue="Application.NioExamples" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.Server" />
+        <item itemvalue="Application.BuffersExamples" />
+        <item itemvalue="Application.NioServer" />
+        <item itemvalue="Application.NioExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -170,5 +174,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,5 +1,7 @@
 package com.geekbrains.lesson2_nio;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -9,8 +11,6 @@ import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.nio.charset.StandardCharsets;
 import java.util.Set;
-
-import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 public class NioServer {
