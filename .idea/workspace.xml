@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/chat/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/chat/ChatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/chat/chat.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/server/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson3/netty/Server.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson3/netty/StringHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/chat/UserCache.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/server/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson4/Expression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson4/FlatMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson4/Foo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson4/StreamTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson4/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson4/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -77,7 +76,7 @@
       <recent name="com.geekbrains.chat" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Server (1)">
+  <component name="RunManager" selected="Application.StreamTest">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geekbrains.App" />
       <module name="cloud-storage-nov-client" />
@@ -91,25 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuffersExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson2_nio.BuffersExamples" />
+    <configuration name="FlatMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson4.FlatMapTest" />
       <module name="cloud-storage-nov-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.lesson2_nio.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson2_nio.NioServer" />
-      <module name="cloud-storage-nov-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.lesson2_nio.*" />
+          <option name="PATTERN" value="com.geekbrains.lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.Server" />
+    <configuration name="StreamTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson4.StreamTest" />
       <module name="cloud-storage-nov-server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.*" />
+          <option name="PATTERN" value="com.geekbrains.lesson4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,24 +129,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson4.Test" />
+      <module name="cloud-storage-nov-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.lesson4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StreamTest" />
+        <item itemvalue="Application.FlatMapTest" />
+        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Server (1)" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.NioServer" />
-        <item itemvalue="Application.BuffersExamples" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +178,8 @@
       <updated>1635442834457</updated>
       <workItem from="1635442835671" duration="5518000" />
       <workItem from="1635786520115" duration="8059000" />
-      <workItem from="1636045502514" duration="4587000" />
+      <workItem from="1636045502514" duration="4711000" />
+      <workItem from="1636996308017" duration="4664000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 2. Nio">
       <created>1635793561063</created>
@@ -186,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635793561063</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Lesson 3. Netty">
+      <created>1636050129285</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1636050129285</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +203,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Lesson 2. Nio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 2. Nio" />
+    <MESSAGE value="Lesson 3. Netty" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3. Netty" />
   </component>
 </project>
