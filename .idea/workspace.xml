@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/PanelController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/лого_дзен.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
