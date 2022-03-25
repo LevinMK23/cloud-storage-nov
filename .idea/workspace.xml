@@ -4,8 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="">
+    <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="не работает авторизация и регистрация">
+      <change afterPath="$PROJECT_DIR$/client/client/hgjkg/copy_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/MainController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout_auth.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/CloudMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/CommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/CreateFolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/DeleteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/Directori.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/FileMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/FileRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/ListMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/PasteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/RenameFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/ServerHome.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/UpDirectori.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/Новая папка/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/BaseNettyServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServerHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/DBAuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/NettyEchoServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/StringHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/com/geekbrains/an/netty/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/1232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1232_copy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/layout.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка/1232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/1.txt_copy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/1232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/лого_дзен.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/File_Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/File_Info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/File_Info_server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/PanelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/panel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232_copy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/fileRequest" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/root/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/root/Hello.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/1232" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/Новая папка/Новая папка/2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/лого_дзен.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/DaemonThreadsExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/File_Info_server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Server.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/BuffersExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioExamples.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioServer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +95,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,39 +112,53 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="2093AmfvRWVQDo0XEwxOH4ZDTZs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../JAVA3/chat/chat-geek" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2861357" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.13154691" />
+    <property name="project.structure.side.proportion" value="0.2035124" />
+    <property name="settings.editor.selected.configurable" value="preferences.intentionPowerPack" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.geekbrains.an.model" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains" />
-      <recent name="$PROJECT_DIR$/cloud-storage-nov-server/server" />
-      <recent name="$PROJECT_DIR$/cloud-storage-nov-client/client" />
-      <recent name="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources" />
-      <recent name="$PROJECT_DIR$/cloud-storage-nov-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/server/src/main/resources/com/geekbrains/an/netty" />
+      <recent name="$PROJECT_DIR$/core/src/main/resources" />
+      <recent name="$PROJECT_DIR$/client/src/main/resources" />
+      <recent name="$PROJECT_DIR$/server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/nio" />
       <recent name="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.geekbrains.an.client" />
+      <recent name="com.geekbrains.an" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geekbrains.an.client" />
+      <recent name="com.geekbrains.an.model" />
       <recent name="com.geekbrains" />
     </key>
   </component>
@@ -84,12 +176,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.App" />
+    <configuration name="App" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.client.App" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.an.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppAuth" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.client.AppAuth" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.an.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.client.App" />
       <module name="cloud-storage-nov-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.*" />
+          <option name="PATTERN" value="com.geekbrains.an.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,12 +217,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BuffersExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson2_nio.BuffersExamples" />
-      <module name="cloud-storage-nov-server" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.client.App" />
+      <module name="cloud-storage-nov-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.lesson2_nio.*" />
+          <option name="PATTERN" value="com.geekbrains.an.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -110,12 +230,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DaemonThreadsExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.DaemonThreadsExample" />
-      <module name="cloud-storage-nov-server" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.client.App" />
+      <module name="cloud-storage-nov-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.*" />
+          <option name="PATTERN" value="com.geekbrains.an.client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,12 +243,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NioServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.lesson2_nio.NioServer" />
-      <module name="cloud-storage-nov-server" />
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.App" />
+      <module name="cloud-storage-nov-client" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.lesson2_nio.*" />
+          <option name="PATTERN" value="com.geekbrains.an.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,12 +256,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.Server" />
-      <module name="cloud-storage-nov-server" />
+    <configuration name="CloudServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.netty.CloudServer" />
+      <module name="server" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.geekbrains.*" />
+          <option name="PATTERN" value="com.geekbrains.an.netty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -149,13 +269,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.client.App" />
+      <module name="client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven" singleton="false">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$/client" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.CloudServer (1)" />
+      <item itemvalue="Application.AppAuth" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.Server" />
-        <item itemvalue="Application.DaemonThreadsExample" />
-        <item itemvalue="Application.BuffersExamples" />
-        <item itemvalue="Application.NioServer" />
+        <item itemvalue="Application.CloudServer (1)" />
+        <item itemvalue="Application.AppAuth" />
+        <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
   </component>
@@ -189,5 +364,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="не работает авторизация и регистрация" />
+    <option name="LAST_COMMIT_MESSAGE" value="не работает авторизация и регистрация" />
   </component>
 </project>
