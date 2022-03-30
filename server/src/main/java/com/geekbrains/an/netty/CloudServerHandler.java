@@ -9,7 +9,7 @@ import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.concurrent.CopyOnWriteArrayList;
+
 
 @Slf4j
 public class CloudServerHandler extends SimpleChannelInboundHandler<CloudMessage> {
@@ -18,10 +18,6 @@ public class CloudServerHandler extends SimpleChannelInboundHandler<CloudMessage
     private Path userHomeDir;
 
     private File authFile = new File("/home/andr/Документы/Java_4/cloud-storage-nov/server/src/main/resources/authFile.txt");
-
-    private final CopyOnWriteArrayList<User> user = new CopyOnWriteArrayList<>();
-    private User userAdmin1 = new User("admin", "admin");
-
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {

@@ -74,8 +74,6 @@ public class MainController implements Initializable {
             Thread readThread = new Thread(this::read);
             readThread.setDaemon(true);
             readThread.start();
-
-
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -95,12 +93,6 @@ public class MainController implements Initializable {
     }
 
     public void regAction(ActionEvent actionEvent) throws IOException {
-//        if (loginRegFild.getText() != null) {
-//            log.debug("login: " + loginRegFild.getText());
-//            if (passwordRegFild.getText().equals(passwordRegFild2.getText()) & 2 == 2) {
-//                log.debug("password = " + passwordRegFild.getText() + "password2 = " + passwordRegFild2.getText());
-//            } else log.debug("fail");
-//        }
         if (loginRegFild.getText() != null && passwordRegFild.getText().equals(passwordRegFild2.getText())) {
             log.debug("ok", loginRegFild.getText(), passwordRegFild.getText() );
             os.writeObject(new User_reg(loginRegFild.getText(), passwordRegFild.getText()));
@@ -242,7 +234,7 @@ public class MainController implements Initializable {
 
         serverView.setOnMouseClicked(e -> {
             if (e.getClickCount() == 2) {
-                String file = serverView.getSelectionModel().getSelectedItem().toString();
+                String file = serverView.getSelectionModel().getSelectedItem();
                 log.debug("file = ", file);
                 try {
                     processInDirectori(file);
@@ -271,7 +263,6 @@ public class MainController implements Initializable {
             try {
                 Files.delete(Paths.get(path_Field.getText() + "/" + fileName));
                 updateClientView();
-//                updateList(Paths.get(path_Field.getText()));
             } catch (IOException e) {
                 Alert alert = new Alert(Alert.AlertType.WARNING, "Не удалось удалить файл", ButtonType.OK);
                 alert.showAndWait();
@@ -355,7 +346,6 @@ public class MainController implements Initializable {
             dialog.setContentText("Пожалуйста, введите новое имя: ");
             Optional<String> result = dialog.showAndWait();
             result.ifPresent(newName -> {
-//                File newFile = new File(newName);
                 log.debug("newName " + newName);
                 if (oldName.renameTo(new File(clientDir.resolve(newName).toString()))) {
                     log.debug("Файл переименован успешно");
@@ -437,7 +427,6 @@ public class MainController implements Initializable {
 
     public void btnPathUpAction(ActionEvent actionEvent) {
         Path upperPath = clientDir.getParent();
-//        Path upperPath = Paths.get(path_Field.getText()).getParent();
         if (upperPath != null) {
             clientDir = upperPath;
             Platform.runLater(this::updateClientView);

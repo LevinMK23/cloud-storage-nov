@@ -5,44 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="не работает авторизация и регистрация">
-      <change afterPath="$PROJECT_DIR$/client/client/Text_fail.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/client/hgjkg/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User_fail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User_reg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User_reg_fail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/1/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/admin/Text_fail.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/login1/моя папка/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/Новая папка/Новая папка/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/authFile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/hgjkg/new1/copy_1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/a/1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/File_Info.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/layout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232_copy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/root/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/Новая папка/Новая папка/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/лого_дзен.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/AuthService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/geekbrains/an/model/AuthService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/target/classes/com/geekbrains/an/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/geekbrains/an/model/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/BaseNettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/BaseNettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServerHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/DBAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/BaseNettyServer$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/BaseNettyServer$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/BaseNettyServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/BaseNettyServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/DBAuthService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,7 +96,7 @@
       <recent name="com.geekbrains" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.CloudServer (1)">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -216,6 +190,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BaseNettyServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8 (2)" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.netty.BaseNettyServer" />
+      <module name="client" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.an.netty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CloudServer (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.geekbrains.an.netty.CloudServer" />
       <module name="server" />
@@ -284,11 +273,13 @@
       <item itemvalue="Application.App" />
       <item itemvalue="Application.CloudServer (1)" />
       <item itemvalue="Application.AppAuth" />
+      <item itemvalue="Application.BaseNettyServer" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.App" />
         <item itemvalue="Application.CloudServer (1)" />
+        <item itemvalue="Application.BaseNettyServer" />
         <item itemvalue="Application.AppAuth" />
         <item itemvalue="Application.App" />
       </list>

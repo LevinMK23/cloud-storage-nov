@@ -2,10 +2,8 @@ package com.geekbrains.an.model;
 
 public enum CommandType {
     AUTH,
-    AUTH_OK,
     AUTH_FAIL,
     REGISTER,
-    REGISTER_OK,
     REGISTER_FAIL,
     FILE,
     FILE_REQUEST,
