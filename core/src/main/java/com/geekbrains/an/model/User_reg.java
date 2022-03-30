@@ -2,7 +2,7 @@ package com.geekbrains.an.model;
 
 import java.util.Objects;
 
-public class User implements CloudMessage {
+public class User_reg implements CloudMessage {
     private final String login;
     private final String password;
 
@@ -17,7 +17,7 @@ public class User implements CloudMessage {
 
 
 
-    public User(String login, String password) {
+    public User_reg(String login, String password) {
         this.login = login;
         this.password = password;
     }
@@ -27,7 +27,7 @@ public class User implements CloudMessage {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        User user = (User) o;
+        User_reg user = (User_reg) o;
 
         if (!Objects.equals(login, user.login)) return false;
         if (!Objects.equals(password, user.password)) return false;
@@ -42,26 +42,7 @@ public class User implements CloudMessage {
     }
     @Override
     public CommandType getType() {
-        return CommandType.AUTH;
+        return CommandType.REGISTER;
     }
 
-//    public CommandType getTypeAuth() {
-//        return CommandType.AUTH;
-//    }
-//    public CommandType getAuthOk() {
-//        return CommandType.AUTH_OK;
-//    }
-//    public CommandType getAuthFail() {
-//        return CommandType.AUTH_FAIL;
-//    }
-//
-//    public CommandType getTypeReg() {
-//        return CommandType.REGISTER;
-//    }
-//    public CommandType getTypeRegOk() {
-//        return CommandType.REGISTER_OK;
-//    }
-//    public CommandType getTypeRegFail() {
-//        return CommandType.REGISTER_FAIL;
-//    }
 }

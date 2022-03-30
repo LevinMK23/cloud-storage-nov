@@ -5,28 +5,46 @@ import io.netty.channel.ChannelHandlerContext;
 import io.netty.channel.SimpleChannelInboundHandler;
 import lombok.extern.slf4j.Slf4j;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 @Slf4j
 public class CloudServerHandler extends SimpleChannelInboundHandler<CloudMessage> {
 
     private Path currentDir;
-    private AuthService authService;
-    private DBAuthService dbAuthService;
+    private Path userHomeDir;
+
+    private File authFile = new File("/home/andr/Документы/Java_4/cloud-storage-nov/server/src/main/resources/authFile.txt");
+
+    private final CopyOnWriteArrayList<User> user = new CopyOnWriteArrayList<>();
+    private User userAdmin1 = new User("admin", "admin");
+
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) throws Exception {
         // init server dir
+        IsFileExist(authFile);
         currentDir = Paths.get("server" , "server");
         if (!Files.exists(currentDir)) {
                 Files.createDirectory(currentDir);
             }
         sendList(ctx);
     }
+
+     public synchronized void IsFileExist(File file) {
+        Path path = Paths.get("server", "resources");
+             if (!Files.exists(path.resolve("authFile.txt"))) {
+                    try {
+                        Files.createFile(path.resolve("authFile.txt"));
+                        log.debug("file.getName()");
+                    } catch (IOException e) {
+                          e.printStackTrace();
+                    }
+             }
+       }
 
     @Override
     protected void channelRead0(ChannelHandlerContext ctx, CloudMessage cloudMessage) throws Exception {
@@ -68,39 +86,98 @@ public class CloudServerHandler extends SimpleChannelInboundHandler<CloudMessage
                 sendList(ctx);
                 break;
             case AUTH:
-                log.debug("auth!!!!!!!");
-                authService((User) cloudMessage);
+                log.debug("AUTH!!!!!!!");
+                authService(ctx, (User) cloudMessage);
                 sendList(ctx);
                 break;
             case REGISTER:
                 log.debug("REG!!!!!!!");
-                regServisw((User) cloudMessage);
+                regServis(ctx, (User_reg) cloudMessage);
                 sendList(ctx);
                 break;
         }
 
     }
 
-    private void regServisw(User cloudMessage) {
+    public void WriteInFile(String str) {
+        FileWriter fw = null;
+        try {
+            fw = new FileWriter(authFile, true);
+            fw.write(str + "\n");
+            fw.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        User user =  dbAuthService.regNewLoginAndPassword(cloudMessage.getLogin(), cloudMessage.getPassword());
-       log.debug("Login", user.getLogin());
-        if (user != null) {
-            user.getTypeRegOk();
-        } else {
-            user.getTypeRegFail();
-            log.debug("Login", user.getLogin());}
     }
 
-    private void authService(User cloudMessage) throws IOException {
-        User user = dbAuthService.findByLoginAndPassword(cloudMessage.getLogin(), cloudMessage.getPassword());
-        if (user != null) {
-            user.getAuthOk();
-            currentDir = Paths.get("server", user.getLogin());
-        if (!Files.exists(currentDir)) {
-                Files.createDirectory(currentDir);
+    private synchronized void regServis(ChannelHandlerContext ctx, User_reg cloudMessage) {
+        if (!isUserExist(cloudMessage.getLogin())) {
+            WriteInFile( "un" + cloudMessage.getLogin());
+            WriteInFile("pw" + cloudMessage.getPassword());
+            ctx.writeAndFlush(new User_reg(cloudMessage.getLogin(), cloudMessage.getPassword()));
+        } else {
+            ctx.writeAndFlush(new User_reg_fail());
+            log.debug("Reg fail");
+        }
+    }
+
+    private synchronized boolean isUserExist(String userLogin) {
+        try {
+            FileInputStream fis = new FileInputStream(authFile);
+            InputStreamReader isr = new InputStreamReader(fis, "utf-8");
+            BufferedReader br = new BufferedReader(isr);
+            String line = "";
+            while ((line = br.readLine()) != null) {
+                if (line.equals("un" + userLogin)) {
+                    return true;
+                }
             }
-        } else { user.getAuthFail();}
+            br.close();
+            isr.close();
+            fis.close();
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
+    private synchronized void authService(ChannelHandlerContext ctx, User cloudMessage)  {
+        log.debug("authServis started");
+        try {
+            FileInputStream fis = new FileInputStream(authFile);
+            InputStreamReader isr = new InputStreamReader(fis, "utf-8");
+            BufferedReader br = new BufferedReader(isr);
+            String line = "";
+            boolean flag = false;
+            while ((line = br.readLine()) != null) {
+                log.debug("поиск логина", line);
+                if (line.equals("un" + cloudMessage.getLogin())) {
+                    if (br.readLine().equals("pw" + cloudMessage.getPassword())) {
+                        ctx.writeAndFlush(cloudMessage);
+                        userHomeDir = Paths.get("server", cloudMessage.getLogin());
+                        currentDir = userHomeDir;
+                        log.debug("new currentDir " + currentDir.toAbsolutePath().normalize());
+                        if (!Files.exists(currentDir)) {
+                            Files.createDirectory(currentDir);
+                        }
+                        flag = true;
+                    }
+                }
+            }
+            if (flag == false) {
+                ctx.writeAndFlush(new User_fail());
+            }
+            br.close();
+            isr.close();
+            fis.close();
+        } catch (FileNotFoundException | UnsupportedEncodingException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
@@ -157,14 +234,14 @@ public class CloudServerHandler extends SimpleChannelInboundHandler<CloudMessage
     }
 
     public void serverHomeClik() {
-        currentDir = Paths.get("server" , "server");
+        currentDir = userHomeDir;
     }
 
     public void btnPathUpAction() {
         Path upperPath = currentDir.getParent();
-        if (upperPath != null) {
-            currentDir = upperPath;
-        }
+        if (upperPath != null && currentDir.equals(userHomeDir)) {
+            currentDir = userHomeDir;
+        } else {currentDir = upperPath;}
     }
 
     private void processDirectory(Directori cloudMessage) {

@@ -92,12 +92,13 @@
                 <TextField fx:id="loginRegFild" layoutX="232.0" layoutY="155.0" prefHeight="26.0" prefWidth="198.0" />
                 <PasswordField fx:id="passwordRegFild" layoutX="231.0" layoutY="196.0" prefHeight="26.0" prefWidth="198.0" />
                 <PasswordField fx:id="passwordRegFild2" layoutX="232.0" layoutY="231.0" prefHeight="26.0" prefWidth="198.0" />
-                <Button layoutX="268.0" layoutY="270.0" mnemonicParsing="false" onAction="#regAction" prefHeight="26.0" prefWidth="125.0" text="Регистрация"  />
+                <Button layoutX="268.0" layoutY="270.0" mnemonicParsing="false" onAction="#regAction" prefHeight="26.0" prefWidth="125.0" text="Регистрация" />
                 <Label alignment="CENTER" layoutX="67.0" layoutY="234.0" style="&#10;" text="Пароль ещё раз:" textAlignment="CENTER" textFill="#9f9f9f" wrapText="false">
                     <font>
                         <Font size="18.0" />
                     </font>
                 </Label>
+            <Button layoutX="268.0" layoutY="309.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="125.0" text="назад к входу" onAction="#backToLoginAuth" />
             </children>
         </Pane>
 

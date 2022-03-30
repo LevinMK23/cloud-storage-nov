@@ -32,9 +32,7 @@ public class MainController implements Initializable {
     public ListView<String> ListView;
     public TextField TextField;
     private Path clientDir;
-    public TableView<File_Info> clientView2;
     public ListView<String> clientView;
-    public TableView<File_Info> serverView2;
     public ListView<String> serverView;
     public TextField path_Field;
     public TextField path_server_Field;
@@ -86,7 +84,7 @@ public class MainController implements Initializable {
 
     public void auth(ActionEvent actionEvent) throws IOException {
         if (loginFild != null & passwordFild != null) {
-            os.writeObject(new User(loginFild.getText(), passwordFild.getText()).getTypeAuth());
+            os.writeObject(new User(loginFild.getText(), passwordFild.getText()));
         }
     }
     public void regPanelAction(ActionEvent actionEvent) {
@@ -105,8 +103,11 @@ public class MainController implements Initializable {
 //        }
         if (loginRegFild.getText() != null && passwordRegFild.getText().equals(passwordRegFild2.getText())) {
             log.debug("ok", loginRegFild.getText(), passwordRegFild.getText() );
-            os.writeObject(new User(loginRegFild.getText(), passwordRegFild.getText()).getTypeReg());
-        } else {log.debug("fail " + loginRegFild.getText() + " password " + passwordRegFild.getText() + " password2 " + passwordRegFild2.getText());}
+            os.writeObject(new User_reg(loginRegFild.getText(), passwordRegFild.getText()));
+        } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "пароли не совпадают ", ButtonType.OK);
+        alert.showAndWait();
+        log.debug("fail " + loginRegFild.getText() + " password " + passwordRegFild.getText() + " password2 " + passwordRegFild2.getText());}
     }
 
     private void read() {
@@ -121,13 +122,15 @@ public class MainController implements Initializable {
                     case LIST:
                         processListMessage((ListMessage) message);
                         break;
-                    case AUTH_OK:
+                    case AUTH:
+                        log.debug("auth");
                         processAuthOk();
                         break;
                     case AUTH_FAIL:
+                        log.debug("auth fail");
                         processAuthFail();
                         break;
-                    case REGISTER_OK:
+                    case REGISTER:
                         processRegOk();
                         break;
                     case REGISTER_FAIL:
@@ -142,27 +145,35 @@ public class MainController implements Initializable {
     }
 
     private void processRegFail() {
-        Alert alert = new Alert(Alert.AlertType.ERROR, "Неудалось зарегистрироваться, возможно такой Логин уже существует ", ButtonType.OK);
-        alert.showAndWait();
+        Platform.runLater(() -> {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Неудалось зарегистрироваться, возможно такой Логин уже существует ", ButtonType.OK);
+            alert.showAndWait();
+        });
+
     }
 
     private void processRegOk() {
-            authRegPanel.setDisable(true);
-            authRegPanel.setVisible(false);
+            regPanel.setDisable(true);
+            regPanel.setVisible(false);
             authPanel.setDisable(false);
             authPanel.setVisible(true);
     }
 
-    private void processAuthFail() {
-        Alert alert = new Alert(Alert.AlertType.ERROR, "Неправильный Логин или пароль ", ButtonType.OK);
-        alert.showAndWait();
+    private void processAuthFail() throws IOException  {
+        Platform.runLater(() -> {
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Неправильный Логин или пароль ", ButtonType.OK);
+            alert.showAndWait();
+        });
     }
 
     private void processAuthOk() {
+        authRegPanel.setVisible(false);
+        authRegPanel.setDisable(true);
         authPanel.setVisible(false);
         authPanel.setDisable(true);
-        workPanel.setDisable(false);
         workPanel.setVisible(true);
+        workPanel.setDisable(false);
+
     }
 
     public void upload(ActionEvent actionEvent) throws IOException {
@@ -450,4 +461,10 @@ public class MainController implements Initializable {
     }
 
 
+    public void backToLoginAuth(ActionEvent actionEvent) {
+        regPanel.setDisable(true);
+        regPanel.setVisible(false);
+        authPanel.setDisable(false);
+        authPanel.setVisible(true);
+    }
 }

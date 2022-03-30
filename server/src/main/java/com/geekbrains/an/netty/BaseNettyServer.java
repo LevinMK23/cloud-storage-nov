@@ -11,7 +11,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 
 public class BaseNettyServer {
     public BaseNettyServer(ChannelHandler ... handlers) {
-        EventLoopGroup auth = new NioEventLoopGroup(1);
+        EventLoopGroup auth = new NioEventLoopGroup(4);
         EventLoopGroup worker = new NioEventLoopGroup();
 
         try {

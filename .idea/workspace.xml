@@ -5,84 +5,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91d8dbf4-6229-4135-b5e1-c40aed987336" name="Default Changelist" comment="не работает авторизация и регистрация">
-      <change afterPath="$PROJECT_DIR$/client/client/hgjkg/copy_1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/MainController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout_auth.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/CloudMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/CommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/CreateFolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/DeleteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/Directori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/FileMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/FileRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/ListMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/PasteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/RenameFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/ServerHome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/UpDirectori.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/server/Новая папка/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/BaseNettyServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/DBAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/NettyEchoServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/StringHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/com/geekbrains/an/netty/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/Text_fail.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/client/hgjkg/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User_fail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User_reg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User_reg_fail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/1/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/admin/Text_fail.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/login1/моя папка/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/server/Новая папка/Новая папка/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/resources/authFile.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/client/client/1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/1232_copy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/File_Info.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/target/classes/com/geekbrains/an/client/layout.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/layout.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/1.txt_copy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/1232" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/Новая папка1/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/client/лого_дзен.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/File_Info.java" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/java/com/geekbrains/an/client/File_Info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/File_Info_server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/MainController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/java/com/geekbrains/PanelController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/layout.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/layout.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/com/geekbrains/panel.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-client/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/com/geekbrains/an/client/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/1232_copy" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/fileRequest" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/root/1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/root/Hello.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/1.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/1232" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/Новая папка1/Новая папка/Новая папка/2.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/server/лого_дзен.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/DaemonThreadsExample.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/File_Info_server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Handler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/Server.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/BuffersExamples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioExamples.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/java/com/geekbrains/lesson2_nio/NioServer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloud-storage-nov-server/src/main/resources/log4j.properties" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/main/resources/log4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/geekbrains/an/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/geekbrains/an/model/AuthService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/target/classes/com/geekbrains/an/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/core/target/classes/com/geekbrains/an/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/BaseNettyServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/BaseNettyServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/CloudServerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/geekbrains/an/netty/DBAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/CloudServerHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/target/classes/com/geekbrains/an/netty/DBAuthService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -127,7 +87,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Now_cloud-storage/Cloud/cloud-storage-nov" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -157,8 +117,8 @@
       <recent name="com.geekbrains.an" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.geekbrains.an.client" />
       <recent name="com.geekbrains.an.model" />
+      <recent name="com.geekbrains.an.client" />
       <recent name="com.geekbrains" />
     </key>
   </component>
@@ -369,5 +329,15 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="не работает авторизация и регистрация" />
     <option name="LAST_COMMIT_MESSAGE" value="не работает авторизация и регистрация" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.net.BindException" package="java.net" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
